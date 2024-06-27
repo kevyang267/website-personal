@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <p className="text-left py-3 leading-8 text-gray-800 max-w-xl dark:text-white">
               Hi I am Kevin, a software developer from Canada. I have 2 years of
-              experience in Java automation, Serenity, and Selenium for
+              experience in Java automation, Serenity, and Selenium for REST
               microservice, UI, and SQL testing. Let's work together!
             </p>
           </div>
