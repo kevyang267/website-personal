@@ -1,5 +1,4 @@
 "use client";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -37,18 +36,18 @@ import { VscVscode } from "react-icons/vsc";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
-    <div className="bg-black bg-[radial-gradient(#e5e7eb_0px,transparent_1px)] [background-size:50px_50px] min-h-screen">
+    <div className="bg-black bg-[radial-gradient(#e5e7eb_0px,transparent_1px)] [background-size:50px_50px] min-h-screen overflow-hidden">
       <div
         className={`flex items-center justify-center ${darkMode ? "dark" : ""}`}
       >
         <main>
           <section>
-            <nav className="py-10 mb-12 flex justify-between">
+            <nav className="py-10 mb-12 flex justify-between ml-8">
               <h1 className="text-xl dark:text-white">K. Y.</h1>
               <ul className="flex items-center">
                 <li>
                   <a
-                    className="bg-gradient-to-r from-purple-400 to-purple-400 text-white px-4 py-2 rounded-md ml-8"
+                    className="bg-gradient-to-r from-purple-400 to-purple-400 text-white px-4 py-2 rounded-md ml-8 mr-8"
                     href="/Resume (Kevin Yang).pdf"
                     target="blank"
                   >
@@ -87,12 +86,15 @@ export default function Home() {
                     </div>
                   </button>
                 </a>
-                <button className="text-2xl py-6 flex justify-left gap-5 text-gray-700 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-250 dark:text-white rounded-full">
-                  <div className="flex justify-normal gap-2 bg-gray-700 rounded-3xl px-5 py-3">
-                    <AiFillGoogleCircle></AiFillGoogleCircle>
-                    <h1 className="text-sm">Gmail</h1>
-                  </div>
-                </button>
+
+                <a href="mailto:kev4238@gmail.com">
+                  <button className="text-2xl py-6 flex justify-left gap-5 text-gray-700 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-250 dark:text-white rounded-full">
+                    <div className="flex justify-normal gap-2 bg-gray-700 rounded-3xl px-5 py-3">
+                      <AiFillGoogleCircle></AiFillGoogleCircle>
+                      <h1 className="text-sm">Gmail</h1>
+                    </div>
+                  </button>
+                </a>
               </div>
               <p className="text-left pt-3 leading-8 text-gray-800 max-w-xl dark:text-white">
                 Hi I am Kevin, an aspiring software developer and photographer
